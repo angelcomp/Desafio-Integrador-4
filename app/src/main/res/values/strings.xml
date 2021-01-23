@@ -2,10 +2,11 @@
     <string name="app_name">Desafio Integrador 4</string>
 
     <!-- strings do cadastro e login -->
-    <string name="login">LOGIN</string>
-    <string name="create">CREATE ACCOUNT</string>
-    <string name="remember">Remember</string>
+    <string name="email">Digite seu email</string>
+    <string name="senha">Digite sua senha</string>
+    <string name="checkbox">Remember</string>
+    <string name="login">Login</string>
+    <string name="create">Create account</string>
 
     <!-- strings new game -->
-    <string name="saveGame">SAVE GAME</string>
 </resources>
