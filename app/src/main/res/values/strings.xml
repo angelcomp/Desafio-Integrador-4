@@ -10,5 +10,11 @@
     <string name="login">Login</string>
     <string name="create">Create account</string>
 
+    <!-- strings game -->
+    <string name="gameName">Nome do Jogo</string>
+    <string name="gameDate">Data lançamento</string>
+    <string name="description">Descrição</string>
+    <string name="saveGame">Save Game</string>
+
 
 </resources>

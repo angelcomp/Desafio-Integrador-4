@@ -14,6 +14,10 @@ class RegisterActivity : AppCompatActivity() {
         btn_create.setOnClickListener {
             callMain()
         }
+
+        registerBack.setOnClickListener {
+            finish()
+        }
     }
 
     private fun callMain() {

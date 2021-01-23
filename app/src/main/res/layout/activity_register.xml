@@ -19,6 +19,16 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/splash" />
 
+    <ImageView
+        android:id="@+id/registerBack"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="350dp"
         android:layout_height="400dp"
