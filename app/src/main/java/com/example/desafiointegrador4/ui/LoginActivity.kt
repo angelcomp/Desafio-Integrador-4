@@ -3,7 +3,11 @@ package com.example.desafiointegrador4.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import com.example.desafiointegrador4.R
+import com.example.desafiointegrador4.models.Usuario
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
