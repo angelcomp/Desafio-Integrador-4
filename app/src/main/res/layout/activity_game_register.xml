@@ -66,7 +66,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="20dp"
                 android:ems="10"
-                android:hint="@string/email"
+                android:hint="@string/gameDate"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/red"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -80,7 +80,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="20dp"
                 android:ems="10"
-                android:hint="@string/password"
+                android:hint="@string/description"
                 android:inputType="text"
                 android:textColor="@color/red"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -88,7 +88,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/date" />
 
             <ImageView
-                android:id="@+id/iv_btnLogin"
+                android:id="@+id/iv_btnCadastroGame"
                 android:layout_width="300dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
@@ -105,10 +105,10 @@
                 android:text="@string/saveGame"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                app:layout_constraintBottom_toBottomOf="@+id/iv_btnLogin"
-                app:layout_constraintEnd_toEndOf="@+id/iv_btnLogin"
-                app:layout_constraintStart_toStartOf="@+id/iv_btnLogin"
-                app:layout_constraintTop_toTopOf="@+id/iv_btnLogin" />
+                app:layout_constraintBottom_toBottomOf="@+id/iv_btnCadastroGame"
+                app:layout_constraintEnd_toEndOf="@+id/iv_btnCadastroGame"
+                app:layout_constraintStart_toStartOf="@+id/iv_btnCadastroGame"
+                app:layout_constraintTop_toTopOf="@+id/iv_btnCadastroGame" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
@@ -129,9 +129,10 @@
 
             <ImageView
                 android:id="@+id/cam"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_camera"
+                android:scaleType="fitXY"
                 app:layout_constraintEnd_toEndOf="@id/photo"
                 app:layout_constraintStart_toStartOf="@id/photo"
                 app:layout_constraintTop_toTopOf="@id/photo"
