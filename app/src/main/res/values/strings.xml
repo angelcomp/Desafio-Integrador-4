@@ -16,5 +16,7 @@
     <string name="description">Descrição</string>
     <string name="saveGame">Save Game</string>
 
+    <!-- tela home -->
+    <string name="search">Search Games</string>
 
 </resources>
