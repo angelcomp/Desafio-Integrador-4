@@ -60,7 +60,6 @@ class MainActivity : AppCompatActivity(), GameAdapter.onGameClickListener {
 
     override fun onResume() {
         super.onResume()
-        Log.i("ALO", "onResume: ")
         getGames()
     }
 
@@ -82,6 +81,6 @@ class MainActivity : AppCompatActivity(), GameAdapter.onGameClickListener {
     }
 
     override fun GameClick(position: Int) {
-        //cal
+        //call
     }
 }

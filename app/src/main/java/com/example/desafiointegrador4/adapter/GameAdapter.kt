@@ -29,7 +29,6 @@ class GameAdapter(private val listaGames: ArrayList<Game>, val listener: onGameC
         holder.tvNome.text = game.nome
         holder.tvData.text = game.dataCriacao
         Picasso.get().load(game.urlImg).into(holder.ivImg)
-        Log.i("teste no adapter", game.urlImg)
     }
 
     interface onGameClickListener {

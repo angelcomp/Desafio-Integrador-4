@@ -1,5 +1,6 @@
 package com.example.desafiointegrador4.ui
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,6 +19,7 @@ class GameRegisterActivity : AppCompatActivity() {
     private lateinit var storageReference: StorageReference
     private var game: Game = Game()
 
+    @SuppressLint("ShowToast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game_register)
@@ -35,8 +37,12 @@ class GameRegisterActivity : AppCompatActivity() {
             game.dataCriacao = date.text.toString()
             game.descricao = description.text.toString()
 
-            salvarDados()
-            finish()
+            if (game.urlImg == "") {
+                Toast.makeText(this, "Adicione uma imagem antes de salvar!", Toast.LENGTH_SHORT).show()
+            } else {
+                salvarDados()
+                finish()
+            }
         }
     }
 
