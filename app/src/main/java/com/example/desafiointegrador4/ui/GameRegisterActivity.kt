@@ -19,7 +19,6 @@ class GameRegisterActivity : AppCompatActivity() {
     private lateinit var storageReference: StorageReference
     private var game: Game = Game()
 
-    @SuppressLint("ShowToast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game_register)
@@ -47,7 +46,6 @@ class GameRegisterActivity : AppCompatActivity() {
     }
 
     //funçoes para upload da imagem
-
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -84,7 +82,6 @@ class GameRegisterActivity : AppCompatActivity() {
     }
 
     private fun getUniqueKey() = FirebaseFirestore.getInstance().collection("pegando chave").document().id
-
     //término - funçoes para upload da imagem
 
     fun salvarDados() {

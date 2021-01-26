@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesafioIntegrador4">
-        <activity android:name=".ui.GameRegisterActivity"></activity>
+        <activity android:name=".ui.EditActivity"></activity>
+        <activity android:name=".ui.GameDetailsActivity" />
+        <activity android:name=".ui.GameRegisterActivity" />
         <activity android:name=".ui.RegisterActivity" />
         <activity android:name=".ui.LoginActivity" />
         <activity android:name=".ui.SplashActivity">

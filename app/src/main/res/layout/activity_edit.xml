@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/splash" />
 
     <ImageView
-        android:id="@+id/registerGameBack"
+        android:id="@+id/editGameBack"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_marginStart="10dp"

@@ -81,6 +81,11 @@ class MainActivity : AppCompatActivity(), GameAdapter.onGameClickListener {
     }
 
     override fun GameClick(position: Int) {
-        //call
+        val intent = Intent(this, GameDetailsActivity::class.java)
+        val game = listaGames.value?.get(position)
+
+        intent.putExtra("game", game)
+
+        startActivity(intent)
     }
 }

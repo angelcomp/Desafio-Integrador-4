@@ -1,6 +1,5 @@
 package com.example.desafiointegrador4.adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.desafiointegrador4.R
 import com.example.desafiointegrador4.models.Game
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.activity_game_register.*
 
 class GameAdapter(private val listaGames: ArrayList<Game>, val listener: onGameClickListener): RecyclerView.Adapter<GameAdapter.GameViewHolder>() {
     override fun onCreateViewHolder(
