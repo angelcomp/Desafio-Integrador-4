@@ -6,80 +6,90 @@
     android:layout_height="match_parent"
     tools:context=".ui.GameDetailsActivity">
 
-    <ImageView
-        android:id="@+id/iv_bgImg"
-        android:layout_width="409dp"
-        android:layout_height="275dp"
-        android:scaleType="matrix"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/splash" />
-
-    <ImageView
-        android:id="@+id/iv_backDetail"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/abc_vector_test" />
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_editGame">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tv_gameName"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="12dp"
-            android:text="TextView"
-            android:textSize="35dp"
-            android:textStyle="bold" />
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tv_dataGame"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="12dp"
-            android:text="TextView"
-            android:textSize="18dp"
-            android:textStyle="italic" />
+            <ImageView
+                android:id="@+id/iv_bgImg"
+                android:layout_width="409dp"
+                android:layout_height="275dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/splash" />
 
-        <TextView
-            android:id="@+id/tv_descricaoGame"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="18dp"
-            android:text="lorem Ipsum"
-            android:textSize="18dp" />
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_backDetail"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/abc_vector_test" />
 
-    <ImageView
-        android:id="@+id/iv_editGame"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="252dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/red_button" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_editGame">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_editGame"
-        app:layout_constraintEnd_toEndOf="@+id/iv_editGame"
-        app:layout_constraintStart_toStartOf="@+id/iv_editGame"
-        app:layout_constraintTop_toTopOf="@+id/iv_editGame"
-        app:srcCompat="@drawable/ic_lapis" />
+                <TextView
+                    android:id="@+id/tv_gameName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:text="TextView"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_dataGame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:text="TextView"
+                    android:textSize="18dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tv_descricaoGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="18dp"
+                    android:text="lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum "
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_editGame"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="252dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/red_button" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_editGame"
+                app:layout_constraintEnd_toEndOf="@+id/iv_editGame"
+                app:layout_constraintStart_toStartOf="@+id/iv_editGame"
+                app:layout_constraintTop_toTopOf="@+id/iv_editGame"
+                app:srcCompat="@drawable/ic_lapis" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

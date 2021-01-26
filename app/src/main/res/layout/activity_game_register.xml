@@ -114,8 +114,8 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="65dp"
-        android:layout_height="65dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:backgroundTint="@color/red"
         app:cardCornerRadius="10dp"
         app:layout_constraintTop_toTopOf="@id/cardviewtext"

@@ -3,9 +3,6 @@ package com.example.desafiointegrador4.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.LinearLayout
-import android.widget.SearchView
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -45,17 +42,6 @@ class MainActivity : AppCompatActivity(), GameAdapter.onGameClickListener {
         addNewGame.setOnClickListener {
             callGameRegister()
         }
-
-        search.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
-            override fun onQueryTextSubmit(query: String?): Boolean {
-                //adapter.filter.filter(query)
-                return false
-            }
-            override fun onQueryTextChange(newText: String?): Boolean {
-                //adapter.filter.filter(newText)
-                return false
-            }
-        })
     }
 
     override fun onResume() {
