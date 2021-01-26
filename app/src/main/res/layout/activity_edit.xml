@@ -89,7 +89,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/date" />
 
             <ImageView
-                android:id="@+id/iv_btnCadastroGame"
+                android:id="@+id/iv_saveGame"
                 android:layout_width="300dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
@@ -106,10 +106,10 @@
                 android:text="@string/saveGame"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                app:layout_constraintBottom_toBottomOf="@+id/iv_btnCadastroGame"
-                app:layout_constraintEnd_toEndOf="@+id/iv_btnCadastroGame"
-                app:layout_constraintStart_toStartOf="@+id/iv_btnCadastroGame"
-                app:layout_constraintTop_toTopOf="@+id/iv_btnCadastroGame" />
+                app:layout_constraintBottom_toBottomOf="@+id/iv_saveGame"
+                app:layout_constraintEnd_toEndOf="@+id/iv_saveGame"
+                app:layout_constraintStart_toStartOf="@+id/iv_saveGame"
+                app:layout_constraintTop_toTopOf="@+id/iv_saveGame" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 

@@ -17,11 +17,7 @@ class GameDetailsActivity : AppCompatActivity() {
         var game = intent.getSerializableExtra("game") as? Game
 
         if (game != null) {
-            tv_gameName.text = game.nome
-            tv_dataGame.text = game.dataCriacao
-            tv_descricaoGame.text = game.descricao
-
-            Picasso.get().load(game.urlImg).into(iv_bgImg)
+            updateGame(game)
         }
 
         iv_backDetail.setOnClickListener {
@@ -33,6 +29,15 @@ class GameDetailsActivity : AppCompatActivity() {
             intent.putExtra("game", game)
 
             startActivity(intent)
+            finish()
         }
+    }
+
+    fun updateGame(game: Game) {
+        tv_gameName.text = game.nome
+        tv_dataGame.text = game.dataCriacao
+        tv_descricaoGame.text = game.descricao
+
+        Picasso.get().load(game.urlImg).into(iv_bgImg)
     }
 }
