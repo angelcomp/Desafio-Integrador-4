@@ -16,3 +16,5 @@ class SplashActivity : AppCompatActivity() {
         }, 1500)
     }
 }
+
+//apenas splash, com um temporizador de 1 segundo e meio de duração, proxima tela será a de login
